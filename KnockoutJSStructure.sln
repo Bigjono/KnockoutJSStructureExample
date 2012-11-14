@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knockout4", "Knockout4\Knockout4.csproj", "{07FB6CE0-9017-4BB4-B854-46D375A9F4A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knockout4.Data.Mock", "Knockout4.Data.Mock\Knockout4.Data.Mock.csproj", "{1EC20A90-870B-49BE-97CD-A0F84EF72E13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Core", "1. Core", "{F4EE9D3D-3F0A-49C8-8F9F-6C093F747F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knockout.Model", "Knockout.Model\Knockout.Model.csproj", "{7C2D8215-0472-44AB-8667-1D69C886352A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07FB6CE0-9017-4BB4-B854-46D375A9F4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07FB6CE0-9017-4BB4-B854-46D375A9F4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07FB6CE0-9017-4BB4-B854-46D375A9F4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07FB6CE0-9017-4BB4-B854-46D375A9F4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC20A90-870B-49BE-97CD-A0F84EF72E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC20A90-870B-49BE-97CD-A0F84EF72E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC20A90-870B-49BE-97CD-A0F84EF72E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC20A90-870B-49BE-97CD-A0F84EF72E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2D8215-0472-44AB-8667-1D69C886352A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2D8215-0472-44AB-8667-1D69C886352A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2D8215-0472-44AB-8667-1D69C886352A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2D8215-0472-44AB-8667-1D69C886352A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EC20A90-870B-49BE-97CD-A0F84EF72E13} = {F4EE9D3D-3F0A-49C8-8F9F-6C093F747F43}
+		{7C2D8215-0472-44AB-8667-1D69C886352A} = {F4EE9D3D-3F0A-49C8-8F9F-6C093F747F43}
+	EndGlobalSection
+EndGlobal
