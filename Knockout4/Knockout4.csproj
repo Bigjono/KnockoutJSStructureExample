@@ -220,6 +220,7 @@
     <Content Include="Scripts\amplify.js" />
     <Content Include="Scripts\amplify.min.js" />
     <Content Include="Scripts\app\staff\bootstrapper.js" />
+    <Content Include="Scripts\app\staff\vm.js" />
     <Content Include="Scripts\app\staff_main.js" />
     <Content Include="Scripts\app\staff\dataservice.staff.js" />
     <Content Include="Scripts\GPL-LICENSE.txt" />
@@ -259,7 +260,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\app\staff\data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

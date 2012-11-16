@@ -27,8 +27,8 @@
             console.log("asking for all staff");
             return amplify.request({
                 resourceId: 'getAllStaff',
-                success: callback.success,
-                error: callback.error
+                success: callback 
+                
             });
 
         },
@@ -36,8 +36,7 @@
             return amplify.request({
                 resourceId: 'getStaffMember',
                 data: { id: id },
-                success: callback.success,
-                error: callback.error
+                success: callback 
             });
         };
 

@@ -4,7 +4,8 @@
     var root = this;
 
     root.require.config({
-        baseUrl: '/Scripts/app/staff'
+        baseUrl: '/Scripts/app/staff',
+        urlArgs: "bust=" + (new Date()).getTime()
     });
 
 

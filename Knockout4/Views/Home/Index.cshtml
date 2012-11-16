@@ -1,12 +1,4 @@
-﻿
-
-@model dynamic
-
-@{
-    ViewBag.Title = "title";
-}
- 
-
+﻿ 
 
 
 <table>
@@ -15,14 +7,18 @@
             <th>#</th>
             <th>Name</th>
             <th>Mobile</th>
+             <th>Telephone</th>
+            <th>Email Address</th>
         </tr>
     </thead>
     
     <tbody data-bind="foreach: staffMembers">
         <tr>
-            <td data-bind="value: id"></td>
-            <td data-bind="value: name"></td>
-            <td data-bind="value: mobile"></td>
+            <td data-bind="text: id"></td>
+            <td data-bind="text: firstName() + ' ' + surname()"></td>
+            <td data-bind="text: mobile"></td>
+            <td data-bind="text: telephone"></td>
+            <td data-bind="text: emailAddress"></td>
         </tr>
     </tbody>
 
