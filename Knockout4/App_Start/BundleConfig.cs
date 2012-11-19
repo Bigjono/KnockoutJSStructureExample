@@ -15,12 +15,11 @@ namespace Knockout4
                     "~/Scripts/jquery.validate*",
                     "~/Scripts/knockout-{version}.js",
                     "~/Scripts/knockout.mapping-latest.js",
-                    "~/Scripts/amplify.js",
-                    "~/Scripts/require.js"
+                    "~/Scripts/amplify.js"
                 ));
 
-            //bundles.Add(new ScriptBundle("~/bundles/staff")
-            //                .IncludeDirectory("~/Scripts/app/staff/","*.js"));
+            bundles.Add(new ScriptBundle("~/bundles/staff")
+                            .IncludeDirectory("~/Scripts/app/staff/", "*.js"));
 
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));

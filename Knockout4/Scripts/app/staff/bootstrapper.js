@@ -1,25 +1,25 @@
-﻿define('bootstrapper',    
-    ['jquery','ko', 'dataservice','vm'],
-    function ($,ko,dataservice,vm) {
-        var run = function() {
+﻿var sampleapp = sampleapp || {};
+sampleapp.bootstrapper = (function () {
 
-            console.log("bootstrapper.run executed");
-            
-            console.log(dataservice);
 
-            dataservice.staff.getAllStaff( function(data) {
-                console.log("all staff loaded");
+    var run = function() {
 
-                console.log(data);
-                vm.staffMembers=ko.mapping.fromJS(data);
-                ko.applyBindings(vm);
 
-                console.log(vm);
-            });
+        sampleapp.staffdataservice.getAllStaff(function (data) {
+        
 
-        };
-            
-        return {
-            run: run
-        };
-    });
+            console.log(data);
+            sampleapp.vm.globalStaffMembers = ko.mapping.fromJS(data);
+            ko.applyBindings(sampleapp.vm);
+
+            console.log(sampleapp.vm);
+        });
+
+    };
+
+    return {
+        run: run
+    };
+})();
+
+

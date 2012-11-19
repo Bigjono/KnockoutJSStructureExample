@@ -9,16 +9,30 @@
             <th>Mobile</th>
              <th>Telephone</th>
             <th>Email Address</th>
+            <th></th>
         </tr>
     </thead>
     
-    <tbody data-bind="foreach: staffMembers">
+    <tbody data-bind="">
+       <!-- ko foreach: globalStaffMembers -->
         <tr>
             <td data-bind="text: id"></td>
             <td data-bind="text: firstName() + ' ' + surname()"></td>
             <td data-bind="text: mobile"></td>
             <td data-bind="text: telephone"></td>
             <td data-bind="text: emailAddress"></td>
+            <td><input type="button" data-bind="click: $parent.removeStaffMember" value="Remove" /></td>
+        </tr>
+        <!-- /ko  -->
+        
+        <tr>
+            <td><input id="txtId" value="" /></td>
+            <td><input id="txtName" value="" /></td>
+            <td><input id="txtMobile" value="" /></td>
+            <td><input id="txtTelephone" value="" /></td>
+            <td><input id="txtEmailAddress" value="" /></td>
+            
+            <td><input type="button" data-bind="click: addStaffMember" value="Add" /></td>
         </tr>
     </tbody>
 
@@ -28,7 +42,13 @@
 
 @section scripts
 {
-     
-    <script src="~/scripts/app/staff_main.js" type="text/javascript"></script>
+ 
+    @Scripts.Render("~/bundles/staff")
+   
+    
+    <script type="text/javascript">
+        sampleapp.bootstrapper.run();
+    </script>
+
 
 }

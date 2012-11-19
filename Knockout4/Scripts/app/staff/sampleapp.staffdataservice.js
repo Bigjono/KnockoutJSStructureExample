@@ -1,11 +1,8 @@
-﻿define('dataservice.staff',
-     ['amplify'],
-    function (amplify) {
+﻿var sampleapp = sampleapp || {};
+sampleapp.staffdataservice = (function () {
 
         /// setup and definition
         var init = function () {
-
-            console.log("staff data service init");
 
             var allStaffUrl = "/api/staff";
             var staffMemberUrl = "/api/staff/{id}";
@@ -22,9 +19,11 @@
                     type: "GET"
                 });
 
+
         },
+            
         getAllStaff = function (callback) {
-            console.log("asking for all staff");
+            
             return amplify.request({
                 resourceId: 'getAllStaff',
                 success: callback 
@@ -51,4 +50,4 @@
             getStaffMember: getStaffMember
         };
 
-    });
+})();
